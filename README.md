@@ -1,11 +1,10 @@
 📚 Nome do Projeto
-Stock Controller...
+Stock Controller loja a granel
 
 🧾 Descrição
-Descreva aqui de forma clara e objetiva o propósito da aplicação.
-Explique o enredo ou contexto onde essa API se aplica. Por exemplo:
 
-"Esta API simula o controle de estoque e pedidos de um pequeno supermercado local. Permite cadastrar produtos, fornecedores e registrar pedidos de compra."
+
+Esta API simula o controle de estoque e pedidos de uma loja a granel. Permite cadastrar produtos, fornecedores, registrar pedidos de compra e caçcular o preço dos produtos relacionados ao peso.
 
 👥 Integrantes da Dupla
 Francisco Bueno Ghizelini - chico-bueno
