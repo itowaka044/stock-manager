@@ -7,9 +7,5 @@ namespace A_granel.Controllers;
 public class ProductController : ControllerBase
 {
 
-    // [HttpGet(Name = "GetProducts")]
-    // public IEnumerable<Product> Get()
-    // {
-    //     return [];
-    // }
+    
 }
