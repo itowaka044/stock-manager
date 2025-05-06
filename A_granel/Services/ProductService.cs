@@ -30,10 +30,9 @@ public class ProductService
 
         try{        
             IEnumerable<Product> products = await DbContext.ProductTable.ToListAsync();
-
             return products;
         }catch(Exception exception){
-            throw new Exception("Erro ao ler banco", exception);
+            throw new Exception("erro ao ler banco", exception);
         }
     }
 
