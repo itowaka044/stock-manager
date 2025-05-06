@@ -28,9 +28,13 @@ public class ProductService
 
     public async Task<IEnumerable<Product>> ReadAllAsync(){
 
-        IEnumerable<Product> products = await DbContext.ProductTable.ToListAsync();
+        try{        
+            IEnumerable<Product> products = await DbContext.ProductTable.ToListAsync();
 
-        return products;
+            return products;
+        }catch(Exception exception){
+            throw new Exception("Erro ao ler banco", exception);
+        }
     }
 
 }
