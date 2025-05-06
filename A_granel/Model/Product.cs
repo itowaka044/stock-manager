@@ -12,15 +12,12 @@ public class Product
 
     public int Quantity { get; set; }
 
-    public string? Type {get;set;}
-
-    public Product(string? name, DateOnly expDate, int pricePerGram, int quantity, string? type)
+    public Product(string? name, DateOnly expDate, int pricePerGram, int quantity)
     {
         Name = name;
         ExpDate = expDate;
         PricePerGram = pricePerGram;
         Quantity = quantity;
-        Type = type;
     }
 
 }
