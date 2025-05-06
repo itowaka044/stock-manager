@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NtLiOD8ITj9s6xHFoJBQGeXrYgBM1xC6JRs1pWKezHA=",
+  "Hash": "Xdt6q+EQ/bj09d7V4jBBmA9340uC8itQJbrZOXY3Zwo=",
   "Source": "A_granel",
   "BasePath": "_content/A_granel",
   "Mode": "Default",
@@ -17,55 +17,76 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\6v3j42imt4-j5a8mewn5b.gz",
+      "Identity": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\bahe10ri1i-5ipweew5fc.gz",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/A_granel",
-      "RelativePath": "Script#[.{fingerprint=j5a8mewn5b}]?.js.gz",
+      "RelativePath": "layout#[.{fingerprint=5ipweew5fc}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js",
+      "RelatedAsset": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "mlglw8dpx6",
-      "Integrity": "tmh2/uXdcfOZxX4EBzdNp5H4z8ig/wNa+6YaDctL6uU=",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js"
+      "OriginalItemSpec": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js"
     },
     {
-      "Identity": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\98az3sn21h-72dmnw87gn.gz",
+      "Identity": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\pohdx4t2da-72dmnw87gn.gz",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/A_granel",
-      "RelativePath": "Styles#[.{fingerprint=72dmnw87gn}]?.css.gz",
+      "RelativePath": "styles#[.{fingerprint=72dmnw87gn}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css",
+      "RelatedAsset": "C:\\stock-manager\\A_granel\\wwwroot\\styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "o5m6lk1ewd",
       "Integrity": "VLVxEvP1/dXfDDptwOUmMgiDUQUID97vo9sMCbb1KFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css"
+      "OriginalItemSpec": "C:\\stock-manager\\A_granel\\wwwroot\\styles.css"
     },
     {
-      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\_Layout.cshtml",
+      "Identity": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\s61sigxfal-j5a8mewn5b.gz",
+      "SourceId": "A_granel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/A_granel",
+      "RelativePath": "script#[.{fingerprint=j5a8mewn5b}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\stock-manager\\A_granel\\wwwroot\\script.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "mlglw8dpx6",
+      "Integrity": "tmh2/uXdcfOZxX4EBzdNp5H4z8ig/wNa+6YaDctL6uU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\stock-manager\\A_granel\\wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\stock-manager\\A_granel\\wwwroot\\",
       "BasePath": "_content/A_granel",
-      "RelativePath": "_Layout#[.{fingerprint}]?.cshtml",
-      "AssetKind": "Build",
+      "RelativePath": "layout#[.{fingerprint}]?.js",
+      "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "",
@@ -73,19 +94,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7xzsafrnb8",
-      "Integrity": "2/oN0EleRVR3g1AozZ3v+R8PvkwMt5ACkwqLSXrNtrc=",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\_Layout.cshtml"
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\layout.js"
     },
     {
-      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js",
+      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\script.js",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\stock-manager\\A_granel\\wwwroot\\",
       "BasePath": "_content/A_granel",
-      "RelativePath": "Script#[.{fingerprint}]?.js",
+      "RelativePath": "script#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -98,15 +119,15 @@
       "Integrity": "Z3MJNKRsMRZpQG/0sUlnTWYI3oo2ZlOj2iArYOhMr/c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Script.js"
+      "OriginalItemSpec": "wwwroot\\script.js"
     },
     {
-      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css",
+      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\styles.css",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\stock-manager\\A_granel\\wwwroot\\",
       "BasePath": "_content/A_granel",
-      "RelativePath": "Styles#[.{fingerprint}]?.css",
+      "RelativePath": "styles#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -119,13 +140,76 @@
       "Integrity": "nyI6huWFkB0pRAj3jmpjrDZna+wJbzsCXblnSMKQURQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Styles.css"
+      "OriginalItemSpec": "wwwroot\\styles.css"
     }
   ],
   "Endpoints": [
     {
-      "Route": "_Layout.7xzsafrnb8.cshtml",
-      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\_Layout.cshtml",
+      "Route": "layout.5ipweew5fc.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\bahe10ri1i-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 20:30:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "layout.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "layout.5ipweew5fc.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -134,19 +218,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "336"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"2/oN0EleRVR3g1AozZ3v+R8PvkwMt5ACkwqLSXrNtrc=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 17:48:17 GMT"
+          "Value": "Tue, 06 May 2025 20:30:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -156,21 +240,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7xzsafrnb8"
+          "Value": "5ipweew5fc"
         },
         {
           "Name": "label",
-          "Value": "_Layout.cshtml"
+          "Value": "layout.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2/oN0EleRVR3g1AozZ3v+R8PvkwMt5ACkwqLSXrNtrc="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
-      "Route": "_Layout.cshtml",
-      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\_Layout.cshtml",
+      "Route": "layout.5ipweew5fc.js.gz",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\bahe10ri1i-5ipweew5fc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -179,19 +263,127 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "336"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/octet-stream"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"2/oN0EleRVR3g1AozZ3v+R8PvkwMt5ACkwqLSXrNtrc=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 17:48:17 GMT"
+          "Value": "Tue, 06 May 2025 20:30:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "layout.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "layout.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\bahe10ri1i-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 20:30:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "layout.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 20:30:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -201,13 +393,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2/oN0EleRVR3g1AozZ3v+R8PvkwMt5ACkwqLSXrNtrc="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
-      "Route": "Script.j5a8mewn5b.js",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\6v3j42imt4-j5a8mewn5b.gz",
+      "Route": "layout.js.gz",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\bahe10ri1i-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 20:30:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "script.j5a8mewn5b.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\s61sigxfal-j5a8mewn5b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -260,7 +497,7 @@
         },
         {
           "Name": "label",
-          "Value": "Script.js"
+          "Value": "script.js"
         },
         {
           "Name": "integrity",
@@ -269,8 +506,8 @@
       ]
     },
     {
-      "Route": "Script.j5a8mewn5b.js",
-      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js",
+      "Route": "script.j5a8mewn5b.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\script.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -305,7 +542,7 @@
         },
         {
           "Name": "label",
-          "Value": "Script.js"
+          "Value": "script.js"
         },
         {
           "Name": "integrity",
@@ -314,8 +551,8 @@
       ]
     },
     {
-      "Route": "Script.j5a8mewn5b.js.gz",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\6v3j42imt4-j5a8mewn5b.gz",
+      "Route": "script.j5a8mewn5b.js.gz",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\s61sigxfal-j5a8mewn5b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -358,7 +595,7 @@
         },
         {
           "Name": "label",
-          "Value": "Script.js.gz"
+          "Value": "script.js.gz"
         },
         {
           "Name": "integrity",
@@ -367,8 +604,8 @@
       ]
     },
     {
-      "Route": "Script.js",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\6v3j42imt4-j5a8mewn5b.gz",
+      "Route": "script.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\s61sigxfal-j5a8mewn5b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -422,8 +659,8 @@
       ]
     },
     {
-      "Route": "Script.js",
-      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js",
+      "Route": "script.js",
+      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\script.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -459,8 +696,8 @@
       ]
     },
     {
-      "Route": "Script.js.gz",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\6v3j42imt4-j5a8mewn5b.gz",
+      "Route": "script.js.gz",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\s61sigxfal-j5a8mewn5b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -504,8 +741,8 @@
       ]
     },
     {
-      "Route": "Styles.72dmnw87gn.css",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\98az3sn21h-72dmnw87gn.gz",
+      "Route": "styles.72dmnw87gn.css",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\pohdx4t2da-72dmnw87gn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -558,7 +795,7 @@
         },
         {
           "Name": "label",
-          "Value": "Styles.css"
+          "Value": "styles.css"
         },
         {
           "Name": "integrity",
@@ -567,8 +804,8 @@
       ]
     },
     {
-      "Route": "Styles.72dmnw87gn.css",
-      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css",
+      "Route": "styles.72dmnw87gn.css",
+      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -603,7 +840,7 @@
         },
         {
           "Name": "label",
-          "Value": "Styles.css"
+          "Value": "styles.css"
         },
         {
           "Name": "integrity",
@@ -612,8 +849,8 @@
       ]
     },
     {
-      "Route": "Styles.72dmnw87gn.css.gz",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\98az3sn21h-72dmnw87gn.gz",
+      "Route": "styles.72dmnw87gn.css.gz",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\pohdx4t2da-72dmnw87gn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -656,7 +893,7 @@
         },
         {
           "Name": "label",
-          "Value": "Styles.css.gz"
+          "Value": "styles.css.gz"
         },
         {
           "Name": "integrity",
@@ -665,8 +902,8 @@
       ]
     },
     {
-      "Route": "Styles.css",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\98az3sn21h-72dmnw87gn.gz",
+      "Route": "styles.css",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\pohdx4t2da-72dmnw87gn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -720,8 +957,8 @@
       ]
     },
     {
-      "Route": "Styles.css",
-      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css",
+      "Route": "styles.css",
+      "AssetFile": "C:\\stock-manager\\A_granel\\wwwroot\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -757,8 +994,8 @@
       ]
     },
     {
-      "Route": "Styles.css.gz",
-      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\98az3sn21h-72dmnw87gn.gz",
+      "Route": "styles.css.gz",
+      "AssetFile": "C:\\stock-manager\\A_granel\\obj\\Debug\\net9.0\\compressed\\pohdx4t2da-72dmnw87gn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

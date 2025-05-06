@@ -1,12 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js",
-      "PackagePath": "staticwebassets\\Script.js"
+      "Id": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js",
+      "PackagePath": "staticwebassets\\layout.js"
     },
     {
-      "Id": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css",
-      "PackagePath": "staticwebassets\\Styles.css"
+      "Id": "C:\\stock-manager\\A_granel\\wwwroot\\script.js",
+      "PackagePath": "staticwebassets\\script.js"
+    },
+    {
+      "Id": "C:\\stock-manager\\A_granel\\wwwroot\\styles.css",
+      "PackagePath": "staticwebassets\\styles.css"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.A_granel.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
