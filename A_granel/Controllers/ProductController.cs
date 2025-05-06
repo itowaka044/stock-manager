@@ -1,3 +1,4 @@
+using A_granel.Model;
 using A_granel.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,14 @@ public class ProductController : ControllerBase
         IEnumerable<Product> products = await Service.ReadAllAsync();
         return Ok(products);
        
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Product>> CreateProductAsync(ProductCreateDTO product){
+
+        Product newProduct = await Service.CreateProductAsync(product);
+        return Ok(newProduct);
+        
     }
 
 }
