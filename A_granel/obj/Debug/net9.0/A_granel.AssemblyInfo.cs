@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("A_granel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+854365ca2b0fd084e9fcd7a1e1fbd72ea25dbdce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97b086ea66091ad9cd3567237f979e072f27e388")]
 [assembly: System.Reflection.AssemblyProductAttribute("A_granel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("A_granel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
