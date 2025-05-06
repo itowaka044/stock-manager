@@ -12,13 +12,15 @@ Esta API simula o controle de estoque e pedidos de uma loja a granel. Permite ca
 
 
 Francisco Bueno Ghizelini - chico-bueno\
-João Vitor Wakamori - itowaka044\
+João Vitor Wakamori - itowaka044
 
 
-🛠️ Tecnologias Utilizadas\
+🛠️ Tecnologias Utilizadas
+
+
 Linguagem: C# (.NET 8)\
 Framework: ASP.NET Core - Minimal API\
 ORM: Entity Framework Core\
 Banco de Dados: SQLite\
 Front-end: JavaScript\
-Versionamento: Git + GitHub\
+Versionamento: Git + GitHub
