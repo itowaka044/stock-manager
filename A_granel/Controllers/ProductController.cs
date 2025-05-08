@@ -29,5 +29,17 @@ public class ProductController : ControllerBase
         return Ok(newProduct);
         
     }
+    [HttpPut]
+    public async Task<ActionResult<Product>> UpdateProductAsync(){
+
+        Product updatedProduct = await Service.UpdateProductAsync(product);
+        return Ok(updatedProduct);
+    }
+
+    [HttpDelete]
+    public async Task<ActionResult<Product>> DeleteProductAsync(){
+
+        return Ok("Produto deletado com sucesso");
+    }
 
 }
