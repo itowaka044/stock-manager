@@ -13,7 +13,7 @@ public class ProductService
     }
 
     public async Task<Product> CreateProductAsync(ProductCreateDTO product){
-        Product newProduct = new Product(product.Name, product.ExpDate, product.PricePerGram, product.Quantity);
+        Product newProduct = new Product(product.Name, product.ExpDate, product.PricePer100G, product.Quantity);
         
         DbContext.ProductTable.Add(newProduct);
 

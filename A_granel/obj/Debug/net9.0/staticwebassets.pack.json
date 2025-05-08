@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\stock-manager\\A_granel\\wwwroot\\layout.js",
-      "PackagePath": "staticwebassets\\layout.js"
-    },
-    {
       "Id": "C:\\stock-manager\\A_granel\\wwwroot\\script.js",
       "PackagePath": "staticwebassets\\script.js"
     },

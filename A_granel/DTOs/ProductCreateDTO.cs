@@ -8,16 +8,16 @@ public class ProductCreateDTO
 
     public DateOnly ExpDate { get; set; }
 
-    public int PricePerGram { get; set; }
+    public int PricePer100G { get; set; }
 
     public int Quantity { get; set; }
 
 
-    public ProductCreateDTO(string? name, DateOnly expDate, int pricePerGram, int quantity)
+    public ProductCreateDTO(string? name, DateOnly expDate, int pricePer100G, int quantity)
     {
         Name = name;
         ExpDate = expDate;
-        PricePerGram = pricePerGram;
+        PricePer100G = pricePer100G;
         Quantity = quantity;
     }
 

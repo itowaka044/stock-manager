@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace A_granel.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250506130501_Inicial")]
+    [Migration("20250507014547_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -32,7 +32,7 @@ namespace A_granel.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("PricePerGram")
+                    b.Property<int>("PricePer100G")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Quantity")

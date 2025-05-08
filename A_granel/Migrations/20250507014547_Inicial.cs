@@ -19,7 +19,7 @@ namespace A_granel.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     ExpDate = table.Column<DateOnly>(type: "TEXT", nullable: false),
-                    PricePerGram = table.Column<int>(type: "INTEGER", nullable: false),
+                    PricePer100G = table.Column<int>(type: "INTEGER", nullable: false),
                     Quantity = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

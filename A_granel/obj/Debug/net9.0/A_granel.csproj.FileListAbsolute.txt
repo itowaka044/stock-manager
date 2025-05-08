@@ -157,6 +157,5 @@ C:\stock-manager\A_granel\obj\Debug\net9.0\ref\A_granel.dll
 C:\stock-manager\A_granel\obj\Debug\net9.0\A_granel.RazorAssemblyInfo.cache
 C:\stock-manager\A_granel\obj\Debug\net9.0\A_granel.RazorAssemblyInfo.cs
 C:\stock-manager\A_granel\bin\Debug\net9.0\A_granel.staticwebassets.runtime.json
-C:\stock-manager\A_granel\obj\Debug\net9.0\compressed\bahe10ri1i-5ipweew5fc.gz
-C:\stock-manager\A_granel\obj\Debug\net9.0\compressed\s61sigxfal-j5a8mewn5b.gz
 C:\stock-manager\A_granel\obj\Debug\net9.0\compressed\pohdx4t2da-72dmnw87gn.gz
+C:\stock-manager\A_granel\obj\Debug\net9.0\compressed\s61sigxfal-fvjijkpxka.gz
