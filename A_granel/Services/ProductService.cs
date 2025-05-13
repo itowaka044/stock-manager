@@ -36,6 +36,23 @@ public class ProductService
         }
     }
 
+    public async Task<Product> UpdateProductAsync(Product product){
+        
+        DbContext.ProductTable.Update(product);
+
+        if (existingProduct == null){
+            throw new Exception("Produto não encontrado");
+        }
+        try{
+            await DbContext.SaveChangesAsync();
+            return updatedProduct;
+        }catch(Exception exception){
+            throw new Exception("erro ao atualizar o produto", exception);
+        }
+        
+    } 
+
+
     public async Task<Product> DeleteProductAsync(int id){
 
         try{
