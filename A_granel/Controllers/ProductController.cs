@@ -1,6 +1,7 @@
 using A_granel.Model;
 using A_granel.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace A_granel.Controllers;
 
@@ -29,17 +30,19 @@ public class ProductController : ControllerBase
         return Ok(newProduct);
         
     }
-    [HttpPut]
-    public async Task<ActionResult<Product>> UpdateProductAsync(){
+    // [HttpPut]
+    // public async Task<ActionResult<Product>> UpdateProductAsync(){
 
-        Product updatedProduct = await Service.UpdateProductAsync(product);
-        return Ok(updatedProduct);
-    }
+    //     Product updatedProduct = await Service.UpdateProductAsync(product);
+    //     return Ok(updatedProduct);
+    // }
 
-    [HttpDelete]
-    public async Task<ActionResult<Product>> DeleteProductAsync(){
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<Product>> DeleteProductAsync(int id){
 
-        return Ok("Produto deletado com sucesso");
+        Product removedProduct = await Service.DeleteProductAsync(id);
+
+        return Ok(removedProduct);
     }
 
 }

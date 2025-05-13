@@ -36,4 +36,29 @@ public class ProductService
         }
     }
 
+    public async Task<Product> DeleteProductAsync(int id){
+
+        try{
+
+            Product product = await DbContext.ProductTable.FindAsync(id);
+
+            if(product == null){
+                Console.WriteLine("produto não encontrado");
+            }
+
+            DbContext.ProductTable.Remove(product);
+
+            await DbContext.SaveChangesAsync();
+
+
+            return product;
+
+        } catch(Exception exception) {
+
+            throw new Exception("erro", exception);
+
+        }
+
+    }
+
 }
