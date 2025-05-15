@@ -23,6 +23,13 @@ public class ProductController : ControllerBase
 
     }
 
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Product>> ReadProductById(int id)
+    {
+        Product product = await Service.ReadProductByIdAsync(id);
+        return Ok(product);
+    }
+
     [HttpPost]
     public async Task<ActionResult<Product>> CreateProductAsync(ProductCreateDTO product) {
 
@@ -47,9 +54,11 @@ public class ProductController : ControllerBase
 
 
 
-//     [HttpPatch("{id}")]
-//     public async Task<ActionResult<Product>> PatchProductAsync(int id, ProductCreateDTO product) {
-//         Product updatedProduct = await Service.UpdateProductAsync(id, product);
-//         return Ok(updatedProduct);
-//     }
+     [HttpPatch("{id}")]
+     public async Task<ActionResult<Product>> PatchProductAsync(int id, int quantity) {
+        
+         Product updatedProduct = await Service.ChangeQuantityAsync(id, quantity);
+
+         return Ok(updatedProduct);
+     }
 }

@@ -8,36 +8,62 @@ public class ProductService
 {
     private readonly AppDbContext DbContext;
 
-    public ProductService(AppDbContext dbContext){
+    public ProductService(AppDbContext dbContext)
+    {
         DbContext = dbContext;
     }
 
-    public async Task<Product> CreateProductAsync(ProductCreateDTO product){
+    public async Task<Product> CreateProductAsync(ProductCreateDTO product)
+    {
         Product newProduct = new Product(product.Name, product.ExpDate, product.PricePer100G, product.Quantity);
-        
+
         DbContext.ProductTable.Add(newProduct);
 
-        try{
+        try
+        {
             await DbContext.SaveChangesAsync();
             return newProduct;
-        }catch(Exception exception){
+        }
+        catch (Exception exception)
+        {
             throw new Exception("erro ao salvar no banco", exception);
         }
-        
-    } 
 
-    public async Task<IEnumerable<Product>> ReadAllAsync(){
+    }
 
-        try{        
+    public async Task<IEnumerable<Product>> ReadAllAsync()
+    {
+
+        try
+        {
             IEnumerable<Product> products = await DbContext.ProductTable.ToListAsync();
             return products;
-        }catch(Exception exception){
+        }
+        catch (Exception exception)
+        {
             throw new Exception("erro ao ler banco", exception);
         }
     }
 
-    public async Task<Product> UpdateProductAsync(int id, ProductCreateDTO productDTO){
-        
+
+    public async Task<Product> ReadProductByIdAsync(int id)
+    {
+        try
+        {
+            Product product = await DbContext.ProductTable.FindAsync(id);
+
+            return product;
+        }
+        catch (Exception exception)
+        {
+            throw new Exception("produto não existe", exception);
+        }
+
+    }
+
+    public async Task<Product> UpdateProductAsync(int id, ProductCreateDTO productDTO)
+    {
+
         Product newProduct = await DbContext.ProductTable.FindAsync(id);
 
         if (newProduct == null)
@@ -64,17 +90,20 @@ public class ProductService
         {
             throw new Exception("erro ao atualizar o produto", exception);
         }
-        
-    } 
+
+    }
 
 
-    public async Task<Product> DeleteProductAsync(int id){
+    public async Task<Product> DeleteProductAsync(int id)
+    {
 
-        try{
+        try
+        {
 
             Product product = await DbContext.ProductTable.FindAsync(id);
 
-            if(product == null){
+            if (product == null)
+            {
                 Console.WriteLine("produto não encontrado");
             }
 
@@ -85,12 +114,35 @@ public class ProductService
 
             return product;
 
-        } catch(Exception exception) {
+        }
+        catch (Exception exception)
+        {
 
             throw new Exception("erro", exception);
 
         }
 
+    }
+
+    public async Task<Product> ChangeQuantityAsync(int id, int quantity)
+    {
+        try
+        {
+            Product updatedProduct = await DbContext.ProductTable.FindAsync(id);
+
+            updatedProduct.Quantity = quantity;
+
+            DbContext.ProductTable.Update(updatedProduct);
+
+            await DbContext.SaveChangesAsync();
+
+            return updatedProduct;
+
+        }
+        catch (Exception exception)
+        {
+            throw new Exception("pintinho 2cm", exception);
+        }
     }
 
 }
