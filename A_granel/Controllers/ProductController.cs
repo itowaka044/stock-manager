@@ -11,38 +11,45 @@ public class ProductController : ControllerBase
 {
     private readonly ProductService Service;
 
-    public ProductController(ProductService service){
+    public ProductController(ProductService service) {
         Service = service;
     }
-    
+
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Product>>> ReadAllAsync(){
-        
+    public async Task<ActionResult<IEnumerable<Product>>> ReadAllAsync() {
+
         IEnumerable<Product> products = await Service.ReadAllAsync();
         return Ok(products);
-       
+
     }
 
     [HttpPost]
-    public async Task<ActionResult<Product>> CreateProductAsync(ProductCreateDTO product){
+    public async Task<ActionResult<Product>> CreateProductAsync(ProductCreateDTO product) {
 
         Product newProduct = await Service.CreateProductAsync(product);
         return Ok(newProduct);
-        
-    }
-    [HttpPut]
-    public async Task<ActionResult<Product>> UpdateProductAsync(){
 
-        Product updatedProduct = await Service.UpdateProductAsync(product);
+    }
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Product>> UpdateProductAsync(int id, ProductCreateDTO product) {
+
+        Product updatedProduct = await Service.UpdateProductAsync(id, product);
         return Ok(updatedProduct);
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult<Product>> DeleteProductAsync(int id){
+    public async Task<ActionResult<Product>> DeleteProductAsync(int id) {
 
         Product removedProduct = await Service.DeleteProductAsync(id);
 
         return Ok(removedProduct);
     }
 
+
+
+//     [HttpPatch("{id}")]
+//     public async Task<ActionResult<Product>> PatchProductAsync(int id, ProductCreateDTO product) {
+//         Product updatedProduct = await Service.UpdateProductAsync(id, product);
+//         return Ok(updatedProduct);
+//     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DanApjt66jZ24hISbyPnU9gAipNK8cKQIN0kph+UOdc=",
+  "Hash": "sy4WMxnCSwnsvk9/4g5Gum6YXRBTKwEBjulG3X1AKbU=",
   "Source": "A_granel",
   "BasePath": "_content/A_granel",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "A_granel\\wwwroot",
       "Source": "A_granel",
-      "ContentRoot": "C:\\stock-manager\\A_granel\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\wwwroot\\",
       "BasePath": "_content/A_granel",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\Script.js",
+      "Identity": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\wwwroot\\Script.js",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\stock-manager\\A_granel\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\wwwroot\\",
       "BasePath": "_content/A_granel",
       "RelativePath": "Script.js",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\Script.js"
     },
     {
-      "Identity": "C:\\stock-manager\\A_granel\\wwwroot\\Styles.css",
+      "Identity": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\wwwroot\\Styles.css",
       "SourceId": "A_granel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\stock-manager\\A_granel\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\wwwroot\\",
       "BasePath": "_content/A_granel",
       "RelativePath": "Styles.css",
       "AssetKind": "All",

@@ -36,17 +36,32 @@ public class ProductService
         }
     }
 
-    public async Task<Product> UpdateProductAsync(Product product){
+    public async Task<Product> UpdateProductAsync(int id, ProductCreateDTO productDTO){
         
-        DbContext.ProductTable.Update(product);
+        Product newProduct = await DbContext.ProductTable.FindAsync(id);
 
-        if (existingProduct == null){
+        if (newProduct == null)
+        {
             throw new Exception("Produto não encontrado");
         }
-        try{
+
+        newProduct.Name = productDTO.Name;
+
+        newProduct.ExpDate = productDTO.ExpDate;
+
+        newProduct.PricePer100G = productDTO.PricePer100G;
+
+        newProduct.Quantity = productDTO.Quantity;
+
+        DbContext.ProductTable.Update(newProduct);
+
+        try
+        {
             await DbContext.SaveChangesAsync();
-            return updatedProduct;
-        }catch(Exception exception){
+            return newProduct;
+        }
+        catch (Exception exception)
+        {
             throw new Exception("erro ao atualizar o produto", exception);
         }
         

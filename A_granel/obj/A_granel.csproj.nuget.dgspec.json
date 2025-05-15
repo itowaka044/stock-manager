@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\stock-manager\\A_granel\\A_granel.csproj": {}
+    "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\A_granel.csproj": {}
   },
   "projects": {
-    "C:\\stock-manager\\A_granel\\A_granel.csproj": {
+    "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\A_granel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\stock-manager\\A_granel\\A_granel.csproj",
+        "projectUniqueName": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\A_granel.csproj",
         "projectName": "A_granel",
-        "projectPath": "C:\\stock-manager\\A_granel\\A_granel.csproj",
-        "packagesPath": "C:\\Users\\JOAOVITORWAKAMORI\\.nuget\\packages\\",
-        "outputPath": "C:\\stock-manager\\A_granel\\obj\\",
+        "projectPath": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\A_granel.csproj",
+        "packagesPath": "C:\\Users\\FRANCISCOBUENOGHIZEL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FRANCISCOBUENOGHIZEL\\stock-manager\\A_granel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JOAOVITORWAKAMORI\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FRANCISCOBUENOGHIZEL\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
