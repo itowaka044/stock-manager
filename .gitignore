@@ -117,3 +117,21 @@ TestResults/
 *.coveragexml
 *.testsettings
 *.vsmdi
+
+# SQLite database
+*.db
+*.db-shm
+*.db-wal
+
+# .NET build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
