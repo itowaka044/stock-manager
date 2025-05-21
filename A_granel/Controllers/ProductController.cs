@@ -54,11 +54,13 @@ public class ProductController : ControllerBase
 
 
 
-     [HttpPatch("{id}")]
+     [HttpPut("{id}")]
      public async Task<ActionResult<Product>> PatchProductAsync(int id, int quantity) {
-        
-         Product updatedProduct = await Service.ChangeQuantityAsync(id, quantity);
 
-         return Ok(updatedProduct);
+        Response.Headers.Add("Change-Quantity", $"/Product/Quantity/{id}");
+
+        Product updatedProduct = await Service.ChangeQuantityAsync(id, quantity);
+
+        return Ok(updatedProduct);
      }
 }
