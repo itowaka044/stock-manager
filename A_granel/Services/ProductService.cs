@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace A_granel.Services;
 
+// gerencia os produtos
 public class ProductService
 {
     private readonly AppDbContext DbContext;
@@ -13,6 +14,7 @@ public class ProductService
         DbContext = dbContext;
     }
 
+    // cria um novo produto
     public async Task<Product> CreateProductAsync(ProductCreateDTO product)
     {
         Product newProduct = new Product(product.Name, product.ExpDate, product.PricePer100G, product.Quantity);
@@ -31,6 +33,7 @@ public class ProductService
 
     }
 
+    // devolve todos os produtos
     public async Task<IEnumerable<Product>> ReadAllAsync()
     {
 
@@ -45,7 +48,7 @@ public class ProductService
         }
     }
 
-
+    // devolve apenas um produto pelo id
     public async Task<Product> ReadProductByIdAsync(int id)
     {
         try
@@ -61,6 +64,7 @@ public class ProductService
 
     }
 
+    // atualiza um produto existente
     public async Task<Product> UpdateProductAsync(int id, ProductCreateDTO productDTO)
     {
 
@@ -71,6 +75,7 @@ public class ProductService
             throw new Exception("Produto não encontrado");
         }
 
+        // atualiza os dados do produto
         newProduct.Name = productDTO.Name;
 
         newProduct.ExpDate = productDTO.ExpDate;
@@ -93,7 +98,7 @@ public class ProductService
 
     }
 
-
+    // deleta um produto pelo id
     public async Task<Product> DeleteProductAsync(int id)
     {
 
@@ -124,6 +129,7 @@ public class ProductService
 
     }
 
+   // atualiza a quantidade de um produto
     public async Task<Product> ChangeQuantityAsync(int id, int quantity)
     {
         try

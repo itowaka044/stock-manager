@@ -2,6 +2,7 @@ using System;
 
 namespace A_granel.Model;
 
+// transferencia de dados entre a API e o banco de dados
 public class ProductCreateDTO
 {
     public string? Name { get;set;}

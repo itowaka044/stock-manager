@@ -12,6 +12,7 @@ public class Product
 
     public int Quantity { get; set; }
 
+    // Construtor para novos produtos (sem ID)
     public Product(string? name, DateOnly expDate, int pricePer100G, int quantity)
     {
         Name = name;
@@ -20,7 +21,8 @@ public class Product
         Quantity = quantity;
     }
     
-    public Product( int id, string? name, DateOnly expDate, int pricePer100G, int quantity)
+    // Construtor para produtos existentes (com ID)
+    public Product(int id, string? name, DateOnly expDate, int pricePer100G, int quantity)
     {
         Id = id;
         Name = name;
