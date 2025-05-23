@@ -31,6 +31,7 @@
 ### Pré-requisitos
 
 - [.NET SDK 8.0+](https://dotnet.microsoft.com/en-us/download)
+- [dotnet ef]
 - [SQLite](https://www.sqlite.org/download.html) (ou algum cliente de visualização como DB Browser for SQLite)
 - Git instalado
 
@@ -38,13 +39,16 @@
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/usuario/repositorio
+git clone https://github.com/itowaka044/stock-manager
 
 # 2. Acesse a pasta do projeto
-cd nome-da-pasta
+cd stock-manager
 
 # 3. Restaure os pacotes
 dotnet restore
 
-# 4. Execute a aplicação
+# 4. crie o banco
+dotnet ef database update
+
+# 5. Execute a aplicação
 dotnet run
