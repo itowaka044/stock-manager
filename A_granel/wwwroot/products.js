@@ -1,9 +1,6 @@
 async function carregarProdutos() {
     const productListElement = document.getElementById('lista-produtos');
-    if (!productListElement) {
-        console.error('Elemento com ID "lista-produtos" não encontrado no HTML.');
-        return;
-    }
+
     try {
         const response = await fetch('http://localhost:5067/Product');
 
@@ -29,7 +26,7 @@ async function carregarProdutos() {
             <h3>${produto.name || 'Nome não disponível'}</h3>
             <p><strong>ID:</strong> ${produto.id || 'N/A'}</p>
             <p><strong>Data de Vencimento: ${produto.expDate}</p>
-            <p><strong>Preço p/100 Gramas:</strong> R$ ${produto.pricePer100G}</p>
+            <p><strong>Preço p/100 Gramas:</strong> R$ ${(produto.pricePer100G / 100)}</p>
             <p><strong>Quantidade (em Gramas):</strong> ${produto.quantity}</p>
             <hr>
         `;
