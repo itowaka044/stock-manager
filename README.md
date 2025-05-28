@@ -4,7 +4,7 @@
 
 ## 🧾 Descrição
 
-> Esta API simula o controle de estoque e pedidos de uma loja a granel. Permite cadastrar produtos, fornecedores, registrar pedidos de compra e calcular o preço dos produtos relacionados ao peso.
+> Esta API simula o controle de estoque de uma loja a granel. Permite cadastrar/deletar, visualizar, alterar produtos e calcular o preço dos produtos relacionados ao peso.
 
 ---
 
