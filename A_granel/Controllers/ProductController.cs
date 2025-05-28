@@ -1,3 +1,4 @@
+using A_granel.DTOs;
 using A_granel.Model;
 using A_granel.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -57,11 +58,9 @@ public class ProductController : ControllerBase
     }
 
     // Atualiza a quantidade de um produto, recebendo o id e a nova quantidade
-    [HttpPut("{id}")]
-    public async Task<ActionResult<Product>> PatchProductAsync(int id, int quantity)
+    [HttpPatch("Quantity/{id}")]
+    public async Task<ActionResult<Product>> UpdateQuantityProductAsync(int id, [FromBody]ChangeQuantityDTO quantity)
     {
-        Response.Headers.Add("Change-Quantity", $"/Product/Quantity/{id}");
-
         Product updatedProduct = await Service.ChangeQuantityAsync(id, quantity);
         return Ok(updatedProduct);
     }

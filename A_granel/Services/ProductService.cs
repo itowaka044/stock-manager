@@ -1,3 +1,4 @@
+using A_granel.DTOs;
 using A_granel.Model;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.EntityFrameworkCore;
@@ -130,13 +131,14 @@ public class ProductService
     }
 
    // atualiza a quantidade de um produto
-    public async Task<Product> ChangeQuantityAsync(int id, int quantity)
+    public async Task<Product> ChangeQuantityAsync(int id, ChangeQuantityDTO quantity)
     {
         try
         {
             Product updatedProduct = await DbContext.ProductTable.FindAsync(id);
 
-            updatedProduct.Quantity = quantity;
+
+            updatedProduct.Quantity = quantity.Quantity;
 
             DbContext.ProductTable.Update(updatedProduct);
 
@@ -147,7 +149,7 @@ public class ProductService
         }
         catch (Exception exception)
         {
-            throw new Exception("pintinho 2cm", exception);
+            throw new Exception("erro", exception);
         }
     }
 
