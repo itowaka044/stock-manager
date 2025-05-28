@@ -42,7 +42,7 @@
 git clone https://github.com/itowaka044/stock-manager
 
 # 2. Acesse a pasta do projeto
-cd stock-manager
+cd stock-manager/A_granel
 
 # 3. Restaure os pacotes
 dotnet restore
