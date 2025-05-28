@@ -5,9 +5,10 @@
     ViewData["Title"] = "Página Inicial";
 }
 
-<h1>A_granel istoqui meniger</h1>
-<input type="text" id="name"/>
-<input type="date" id="expDate"/>
-<input type="number" id="pricePer100G"/>
-<input type="number" id="quantity"/>
-<button onclick="getValues()">criar produto</button>
+<div class="planilha">
+    <input type="text" id="name" placeholder="Nome"/>
+    <input type="date" id="expDate" placeholder=""/>
+    <input type="number" id="pricePer100G" placeholder="Preço (p/100 gramas)"/>
+    <input type="number" id="quantity" placeholder="Quantidade (em gramas)"/>
+    <button onclick="getValues()">Cadastrar</button>
+</div>
