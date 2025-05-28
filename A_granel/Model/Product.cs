@@ -8,6 +8,8 @@ public class Product
 
     public DateOnly ExpDate { get; set; }
 
+    // int para PricePer100G, pois será contado em centavos.
+    // sempre dividir por 100 ao exibir no front.
     public int PricePer100G { get; set; }
 
     public int Quantity { get; set; }
