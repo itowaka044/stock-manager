@@ -1,7 +1,8 @@
 async function carregarProdutos() {
     const productListElement = document.getElementById('lista-produtos');
-
+    // Tratamento de  erro 
     try {
+        // Faz uma requisição GET para o endpoint que retorna os produtos
         const response = await fetch('http://localhost:5067/Product');
 
         if (!response.ok) {
@@ -12,16 +13,20 @@ async function carregarProdutos() {
 
         productListElement.innerHTML = '';
 
+        // Verifica se não há produtos na lista
         if (produtos.length === 0) {
         productListElement.innerHTML = '<p>Nenhum produto encontrado.</p>';
         return;
         }
+        // Cria uma "div" para o produto
         produtos.forEach(produto => {
 
         const itemProduto = document.createElement('div'); 
 
+        // Adiciona uma classe CSS para estilização
         itemProduto.classList.add('produto-item'); 
 
+        //  HTML do elemento com os detalhes do produto
         itemProduto.innerHTML = `
             <h3>${produto.name || 'Nome não disponível'}</h3>
             <p><strong>ID:</strong> ${produto.id || 'N/A'}</p>
@@ -33,6 +38,7 @@ async function carregarProdutos() {
 
         productListElement.appendChild(itemProduto);
         });
+
     } catch (error) {
         console.error('Falha ao carregar os produtos:', error);
         if (productListElement) {
