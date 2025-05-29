@@ -18,12 +18,10 @@ async function carregarProdutos() {
         productListElement.innerHTML = '<p>Nenhum produto encontrado.</p>';
         return;
         }
-        // Cria uma "div" para o produto
         produtos.forEach(produto => {
 
         const itemProduto = document.createElement('div'); 
 
-        // Adiciona uma classe CSS para estilização
         itemProduto.classList.add('produto-item'); 
 
         //  HTML do elemento com os detalhes do produto
@@ -33,6 +31,10 @@ async function carregarProdutos() {
             <p><strong>Data de Vencimento: ${produto.expDate}</p>
             <p><strong>Preço p/100 Gramas:</strong> R$ ${(produto.pricePer100G / 100)}</p>
             <p><strong>Quantidade (em Gramas):</strong> ${produto.quantity}</p>
+            <div style="display: flex; width: 100%; height: 25px; gap: 5px">
+                <input style="width: 50%; height: 25px" type="number"/> <button style="width: 50%; height: 25px">Alterar</button>
+            </div>
+            <button style="width: 100%; height: 25px; margin-top: 5px">Excluir</button>
             <hr>
         `;
 
