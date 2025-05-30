@@ -28,6 +28,8 @@ async function carregarProdutos() {
 
         itemProduto.classList.add('produto-item'); 
 
+        const inputId = `input-quantity-${produto.id}`;
+
         //  HTML do elemento com os detalhes do produto
         itemProduto.innerHTML = `
             <h3>${produto.name || 'Nome não disponível'}</h3>
@@ -36,7 +38,7 @@ async function carregarProdutos() {
             <p><strong>Preço p/100 Gramas:</strong> R$ ${(produto.pricePer100G / 100)}</p>
             <p><strong>Quantidade (em Gramas):</strong> ${produto.quantity}</p>
             <div style="display: flex; width: 100%; height: 25px; gap: 5px">
-                <input style="width: 50%; height: 25px" type="number"/> <button style="width: 50%; height: 25px">Alterar</button>
+                <input id="${inputId}" style="width: 50%; height: 25px" type="number"/> <button onclick="alterarQuantityProduto(${produto.id})" style="width: 50%; height: 25px">Alterar</button>
             </div>
             <button onclick="excluirProduto(${produto.id})" style="cursor: pointer;width: 100%; height: 25px; margin-top: 5px">Excluir</button>
             <hr>
@@ -89,6 +91,7 @@ async function cadastrarProduto(){
         const product = await response.json();
 
         alert("produto: " + product.name + " criado");
+        carregarProdutos();
     } catch (error){
         console.log(error.message);
         alert("erro ao criar produto");
@@ -114,5 +117,37 @@ async function excluirProduto(id) {
         
         } catch (error) {
             console.error('Falha ao excluir o produto:', error);
+        }
+}
+
+async function alterarQuantityProduto(id) {
+
+    const inputId = `input-quantity-${id}`;
+
+    const inputElement = document.getElementById(inputId);
+
+    const novaQuantidade = inputElement.value;
+
+    try {
+        const response = await fetch(`http://localhost:5067/Product/Quantity/${id}`, {
+            method: 'PATCH',
+            headers : {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({
+                Quantity : novaQuantidade
+            })
+        });
+        if(!response.ok){
+            throw new Error("Erro ao alterar quantidade");
+            alert("erro ao alterar quantidade, id: " + id);
+        }
+        carregarProdutos();
+        console.log("alterar parte 2 ok");
+        const result = await response.json();
+        console.log('Resposta do servidor:', result);
+        
+        } catch (error) {
+            console.error('Falha ao alterar quantidade:', error);
         }
 }
