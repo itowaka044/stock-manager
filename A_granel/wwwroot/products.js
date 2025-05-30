@@ -34,7 +34,7 @@ async function carregarProdutos() {
             <div style="display: flex; width: 100%; height: 25px; gap: 5px">
                 <input style="width: 50%; height: 25px" type="number"/> <button style="width: 50%; height: 25px">Alterar</button>
             </div>
-            <button style="width: 100%; height: 25px; margin-top: 5px">Excluir</button>
+            <button onclick="excluirProduto("${produto.id}") style="width: 100%; height: 25px; margin-top: 5px">Excluir</button>
             <hr>
         `;
 
