@@ -1,0 +1,6 @@
+@A_granel_HostAddress = http://localhost:5067
+
+GET {{A_granel_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    font-family: "Roboto";
+}
+
+header{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(214, 225, 234);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    width: 30%;
+    height: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+nav a{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    height: 100%;
+    background-color: rgb(91, 124, 146);
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(91, 124, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planilha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    gap: 30px;
+    margin: 10px;
+}
+
+input{
+    width: 50%;
+    height: 5vh;
+}
+
+button{
+    width: 50%;
+    height: 6vh;
+    border: none;
+    background-color: rgb(45, 48, 49);
+    color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color:rgb(214, 225, 234);
+}
+
+#produtos{
+    background-color: rgb(214, 225, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.produto-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.produto-item h3 {
+    margin-top: 0;
+}
