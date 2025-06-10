@@ -1,0 +1,23 @@
+﻿@{
+
+    Layout = "Layout";
+
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="planilha">
+    <input type="text" id="name" placeholder="Nome"/>
+    <input type="date" id="expDate" placeholder=""/>
+    <input type="number" id="pricePer100G" placeholder="Preço (p/100 gramas)"/>
+    <input type="number" id="quantity" placeholder="Quantidade (em gramas)"/>
+    <button onclick="cadastrarProduto()">Cadastrar</button>
+</div>
+
+<script src="~/Script.js"></script>
+
+<div id="produtos">
+    <h1>Meus Produtos</h1>
+        <div id="lista-produtos">
+            <p>Carregando produtos...</p>
+        </div>
+</div>
